@@ -30,7 +30,7 @@ const Navbar = () => {
     }, [lastScrollY]);
 
     return (
-        <div className={`fixed top-0 left-0 w-full bg-scroll bg-black/30 backdrop-blur-lg  text-white p-4 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+        <div className={`z-10 fixed top-0 left-0 w-full bg-scroll bg-black/30 backdrop-blur-lg  text-white p-4 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
             }`}>
             <div className="navbar shadow-sm container mx-auto">
                 <div className="navbar-start">

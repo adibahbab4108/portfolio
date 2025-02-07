@@ -1,15 +1,34 @@
+import { useEffect, useState } from "react";
 import SectionTitle from "../shared/SectionTitle";
-import { myskill_data } from '../../assets/myskills.json'
-import SkillTechMarquee from "./SkillTechMarquee";
 
-// const skills = myskill_data.flatMap(category => category.skills)
-const frontEnd = myskill_data.find(skill => skill.slug === "frontend").skills
-const backEnd = myskill_data.filter(skill => skill.slug === "backend" || skill.slug === "security").map(skill => skill.skills).flat()
-const toolsUtils = myskill_data.find(skill => skill.slug === "tools-utilities").skills
-const otherLanguages = myskill_data.find(skill => skill.slug === "other-languages").skills
+import SkillTechMarquee from "./SkillTechMarquee";
 
 
 const Skills = () => {
+    const [skills, setSkills] = useState(null);
+
+    useEffect(() => {
+        fetch("/myskills.json")
+            .then(res => res.json())
+            .then(data => {
+                setSkills(data.myskill_data || []); // Ensuring default array if undefined
+            })
+            .catch(error => console.error("Error fetching skills:", error));
+    }, []);
+
+    // Handle the case where skills data is not yet loaded
+    if (!skills) {
+        return <p>Loading skills...</p>;
+    }
+
+    // Extract different skill categories safely
+    const frontEnd = skills.find(skill => skill.slug === "frontend")?.skills || [];
+    const backEnd = skills
+        .filter(skill => skill.slug === "backend" || skill.slug === "security")
+        .flatMap(skill => skill.skills) || [];
+    const toolsUtils = skills.find(skill => skill.slug === "tools-utilities")?.skills || [];
+    const otherLanguages = skills.find(skill => skill.slug === "other-languages")?.skills || [];
+
 
     return (
         <div id="skills" className="pb-20">

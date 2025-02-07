@@ -1,6 +1,20 @@
+import { useEffect, useState } from "react";
 import SectionTitle from "../shared/SectionTitle";
-import { projects } from "../../assets/myprojects.json"
+
 const Projects = () => {
+    const [projects, setProjects] = useState(null);
+
+    useEffect(() => {
+        fetch("myprojects.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const { projects } = data
+                setProjects(projects);
+            })
+            .catch((error) => console.error("Error loading JSON:", error));
+    }, []);
+    if (!projects) return <p>Loading...</p>
+    console.log(projects)
     return (
         <div id="projects">
             <SectionTitle title="Projects" subtitle="We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers." />
@@ -14,7 +28,7 @@ const Projects = () => {
                             <div key={idx} className=" bg-slate-900 text-white p-6 rounded-2xl shadow-lg  hover:shadow-xl group">
                                 <div className="relative w-full h-48 overflow-hidden rounded-lg transition-all">
                                     <img
-                                        src={screenshot }
+                                        src={screenshot}
                                         alt={title}
                                         className=" w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                                     />
@@ -24,7 +38,7 @@ const Projects = () => {
                                 </div>
 
                                 <h2 className="text-2xl font-bold mt-4 text-violet-400">{title}</h2>
-                                
+
 
                                 <div className="mt-4 flex flex-wrap gap-2">
                                     {technologies.map((tech, index) => (

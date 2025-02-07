@@ -7,32 +7,32 @@
             "skills": [
                 {
                     "name": "JavaScript",
-                    "logo": "./logo/javascript.png",
+                    "logo": "../src/assets/logo/javascript.png",
                     "learning_percentage": 90
                 },
                 {
                     "name": "React.js",
-                    "logo": "./logo/react.png",
+                    "logo": "../src/assets/logo/react.png",
                     "learning_percentage": 90
                 },
                 {
                     "name": "Tailwind CSS",
-                    "logo": "./logo/tailwindcss.png",
+                    "logo": "../src/assets/logo/tailwindcss.png",
                     "learning_percentage": 90
                 },
                 {
                     "name": "DaisyUI",
-                    "logo": "./logo/daisiui.png",
+                    "logo": "../src/assets/logo/daisiui.png",
                     "learning_percentage": 85
                 },
                 {
                     "name": "Bootstrap",
-                    "logo": "./logo/bootstrap.png",
+                    "logo": "../src/assets/logo/bootstrap.png",
                     "learning_percentage": 75
                 },
                 {
                     "name": "Material UI",
-                    "logo": "./logo/materialui.png",
+                    "logo": "../src/assets/logo/materialui.png",
                     "learning_percentage": 70
                 }
             ]
@@ -44,22 +44,22 @@
             "skills": [
                 {
                     "name": "Node.js",
-                    "logo": "./logo/nodejs.png",
+                    "logo": "../src/assets/logo/nodejs.png",
                     "learning_percentage": 80
                 },
                 {
                     "name": "Express.js",
-                    "logo": "./logo/expressjs.png",
+                    "logo": "../src/assets/logo/expressjs.png",
                     "learning_percentage": 80
                 },
                 {
                     "name": "Firebase",
-                    "logo": "./logo/firebase.png",
+                    "logo": "../src/assets/logo/firebase.png",
                     "learning_percentage": 85
                 },
                 {
                     "name": "MongoDB",
-                    "logo": "./logo/mongodb.png",
+                    "logo": "../src/assets/logo/mongodb.png",
                     "learning_percentage": 85
                 }
             ]
@@ -71,27 +71,27 @@
             "skills": [
                 {
                     "name": "Axios",
-                    "logo": "./logo/axios.png",
+                    "logo": "../src/assets/logo/axios.png",
                     "learning_percentage": 85
                 },
                 {
                     "name": "Vercel",
-                    "logo": "./logo/vercel.png",
+                    "logo": "../src/assets/logo/vercel.png",
                     "learning_percentage": 85
                 },
                 {
                     "name": "Netlify",
-                    "logo": "./logo/netlify.png",
+                    "logo": "../src/assets/logo/netlify.png",
                     "learning_percentage": 80
                 },
                 {
                     "name": "Git",
-                    "logo": "./logo/git.png",
+                    "logo": "../src/assets/logo/git.png",
                     "learning_percentage": 85
                 },
                 {
                     "name": "GitHub",
-                    "logo": "./logo/github.png",
+                    "logo": "../src/assets/logo/github.png",
                     "learning_percentage": 90
                 }
             ]
@@ -103,12 +103,12 @@
             "skills": [
                 {
                     "name": "JWT (JSON Web Token)",
-                    "logo": "./logo/jwt.png",
+                    "logo": "../src/assets/logo/jwt.png",
                     "learning_percentage": 80
                 },
                 {
                     "name": "Firebase Authentication",
-                    "logo": "./logo/firebase.png",
+                    "logo": "../src/assets/logo/firebase.png",
                     "learning_percentage": 85
                 }
             ]
@@ -120,12 +120,12 @@
             "skills": [
                 {
                     "name": "Python",
-                    "logo": "./logo/python.png",
+                    "logo": "../src/assets/logo/python.png",
                     "learning_percentage": 80
                 },
                 {
                     "name": "C++",
-                    "logo": "./logo/cpp.png",
+                    "logo": "../src/assets/logo/cpp.png",
                     "learning_percentage": 80
                 }
             ]
