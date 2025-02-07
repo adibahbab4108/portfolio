@@ -12,7 +12,7 @@
             ],
             "github": "https://github.com/adibahbab4108/employee-management-system",
             "live_demo": "https://employee-management-3e084.web.app/",
-            "screenshot":  "/src/assets/project_demo/project1ss2.png"
+            "screenshot":  "./project_demo/project1ss2.png"
         },
         {
             "title": "Language Exchange Platform",
@@ -25,7 +25,7 @@
             ],
             "github": "https://github.com/adibahbab4108/language-exchange",
             "live_demo": "https://language-exchange-e55d1.web.app/",
-            "screenshot": "/src/assets/project_demo/languageexchange1.png"
+            "screenshot": "./project_demo/languageexchange1.png"
         },
         {
             "title": "Career Up Consultancy",
@@ -38,7 +38,7 @@
             ],
             "github": "https://github.com/adibahbab4108/CareerUp-Consultancy-Web",
             "live_demo": "https://career-up-b9.web.app/",
-            "screenshot": "/src/assets/project_demo/careerup1.png"
+            "screenshot": "./project_demo/careerup1.png"
             
         },
         {
