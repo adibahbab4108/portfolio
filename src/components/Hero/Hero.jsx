@@ -3,8 +3,8 @@ import myProfile from "../../assets/profile.png"
 import SocialLink from "../shared/SocialLink";
 const Hero = () => {
     return (
-        <section className=" h-[calc(100vh-66px)] flex flex-col justify-center mt-20 md:mt-0  text-white px-6 ">
-            <div className="flex flex-col md:flex-row items-center gap-12 mt-96  md:mt-0">
+        <section className=" md:h-[calc(100vh-66px)] flex flex-col justify-center  text-white px-6 ">
+            <div className="flex flex-col md:flex-row items-center gap-12 mt-40 ">
                 {/* Left Content */}
                 <div className="text-center md:text-left max-w-2xl ">
                     <h2 className="text-3xl font-bold">I am Adib</h2>
@@ -41,7 +41,7 @@ const Hero = () => {
             </div>
 
             {/* Stats Section */}
-            <div className="mt-12 flex flex-wrap justify-evenly gap-8 mb-96 pb-26 md:pb-0 md:mb-2">
+            <div className="flex flex-wrap justify-evenly gap-8 py-10 bg-black/30 rounded-2xl my-20">
                 <div className="text-center">
                     <h3 className="text-4xl font-bold">Ꝏ</h3>
                     <p className="text-gray-400">Years of Experience</p>

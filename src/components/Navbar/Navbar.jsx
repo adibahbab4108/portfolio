@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Navbar.css'
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -12,9 +12,27 @@ const Navbar = () => {
         { id: 'contact', label: 'Contact' },
     ];
 
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > lastScrollY) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+            setLastScrollY(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
+
     return (
-        <div className=''>
-            <div className="navbar shadow-sm ">
+        <div className={`fixed top-0 left-0 w-full bg-scroll bg-black/30 backdrop-blur-lg  text-white p-4 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+            }`}>
+            <div className="navbar shadow-sm container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,10 +42,10 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <ul className="sm:flex  gap-4 items-center font-bold justify-between ">
+                            className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow ">
+                            <ul className="sm:flex  gap-6 items-center font-bold justify-between bg-black/50 p-4">
                                 {sections.map((section) => (
-                                    <li key={section.id}>
+                                    <li key={section.id} className=''>
                                         <a
                                             href={`#${section.id}`}
                                             className={`hover:text-purple-600 transition-colors 
@@ -44,7 +62,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <ul className="sm:flex  gap-4 items-center font-bold justify-between ">
+                        <ul className="sm:flex  gap-4 items-center font-bold justify-between">
                             {sections.map((section) => (
                                 <li key={section.id}>
                                     <a

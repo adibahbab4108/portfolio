@@ -10,19 +10,19 @@ const MainLayout = () => {
     return (
         <div>
             <div className="bg-gradient-to-r from-[#0a0214] via-[rgb(39,15,85)] via-80% to-[#0a0214]">
+                <Navbar />
+                
                 <div className="container mx-auto">
-                    <Navbar />
                     <Hero />
-
                 </div>
             </div>
             <div className="bg-[#0a0214]">
                 <div className="container mx-auto px-6">
                     <AboutMe />
-                    <Education/>
+                    <Education />
                     <Skills />
-                    <Projects/>
-                    <ContactMe/>
+                    <Projects />
+                    <ContactMe />
                 </div>
             </div>
         </div>
