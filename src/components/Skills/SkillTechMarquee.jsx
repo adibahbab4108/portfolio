@@ -2,7 +2,7 @@
 import Marquee from "react-fast-marquee";
 
 const SkillTechMarquee = ({ title, category, direction }) => {
-    console.log(category)
+ 
     return (
         <div className=" pb-10">
             <h1 className="text-center font-bold text-purple-700 underline underline-offset-4">{title}</h1>
