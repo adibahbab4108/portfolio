@@ -58,7 +58,7 @@ const Navbar = () => {
                             </ul>
                         </ul>
                     </div>
-                    <a className="btn text-xl">Adib</a>
+                    <a href="mailto:adib.abc2022@gmail.com" className="btn text-xl">Adib</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -80,7 +80,9 @@ const Navbar = () => {
                 <div className="navbar-end">
                     {/* Resume */}
                     <button className="customized-btn">
-                        Resume
+                        <a href="#" download >
+                            Resume
+                        </a>
                     </button>
                 </div>
             </div>

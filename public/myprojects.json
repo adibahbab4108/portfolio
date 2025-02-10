@@ -12,7 +12,7 @@
             ],
             "github": "https://github.com/adibahbab4108/employee-management-system",
             "live_demo": "https://employee-management-3e084.web.app/",
-            "screenshot": "/project_demo/project1ss2.png",
+            "screenshot": "/project_demo/project1ss1.png",
             "challenges_faced": [
                 "Ensuring real-time attendance tracking with minimal latency.",
                 "Implementing secure and role-based access control.",
@@ -84,7 +84,7 @@
             ],
             "github": "https://github.com/adibahbab4108/bistro-boss-restaurant",
             "live_demo": "https://yourwebsite.com/bistro-boss",
-            "screenshot": "#",
+            "screenshot": "/project_demo/bistroboss1.png",
             "challenges_faced": [
                 "Handling real-time order updates efficiently.",
                 "Ensuring smooth UI/UX for a seamless ordering process.",

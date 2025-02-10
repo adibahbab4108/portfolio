@@ -17,10 +17,10 @@ const Hero = () => {
                     </p>
                     {/* Buttons & Social Icons */}
                     <div className="mt-6 flex flex-col md:flex-row items-center gap-4">
-                        <button className="flex items-center gap-2 customized-btn">
+                        <a href="#" download className="flex items-center gap-2 customized-btn">
                             Download CV <FaDownload />
-                        </button>
-                        <SocialLink/>
+                        </a>
+                        <SocialLink />
                     </div>
                 </div>
 
