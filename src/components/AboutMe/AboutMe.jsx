@@ -5,8 +5,11 @@ const AboutMe = () => {
         <div id="about">
             <SectionTitle
                 title="About Me"
-                subtitle="👋 I am a passionate and curious programmer who pursued my B.Sc in Computer Science and Engineering from International Islamic University Chittagong.
-💻 Over the years, I've explored a variety of programming languages and technologies, including C, C++, Java, Python, JavaScript, React, and more.🌐 I particularly enjoy working on web development and am currently focused on specializing in the MERN Stack to build dynamic and scalable applications.🏏 When I'm not coding, you'll find me on the field playing cricket, where teamwork and strategy keep me energized and inspired. 🚀 I am dedicated to growing my skills and exploring innovative opportunities in the tech field, always eager to learn and take on new challenges." />
+                subtitle="Dedicated and curious web developer with a strong focus on the MERN Stack (MongoDB, Express.js, React, Node.js). I love building full-stack applications that are not only functional but also deliver a great user experience.
+
+My journey into tech started with C++, where I developed a knack for problem-solving and algorithmic thinking—a skill that continues to guide me in writing efficient and clean code.
+
+Over time, I've worked with various tools and technologies in both frontend and backend development, including REST APIs, React Router, Firebase Auth, and MongoDB CRUD operations. I'm particularly passionate about writing readable, maintainable code and turning ideas into reality through modern web technologies" />
             <div className="text-white text-center space-x-4 space-y-4 group">
                 <div className="customized-btn p-2 skew-1 group-hover:skew-0">
                     Specializing in MERN Stack

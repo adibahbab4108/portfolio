@@ -45,7 +45,7 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow ">
                             <ul className="sm:flex  gap-6 items-center font-bold justify-between bg-black/50 p-4">
                                 {sections.map((section) => (
-                                    <li key={section.id} className=''>
+                                    <li key={section.id} onClick={()=>setActiveSection(section.id)}>
                                         <a
                                             href={`#${section.id}`}
                                             className={`hover:text-purple-600 transition-colors 
@@ -64,7 +64,7 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <ul className="sm:flex  gap-4 items-center font-bold justify-between">
                             {sections.map((section) => (
-                                <li key={section.id}>
+                                <li key={section.id} onClick={()=>setActiveSection(section.id)}>
                                     <a
                                         href={`#${section.id}`}
                                         className={`hover:text-purple-600 transition-colors ${activeSection === section.id ? 'text-purple-600 font-bold' : 'text-white'

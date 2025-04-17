@@ -13,7 +13,7 @@ const SectionTitle = ({ title = "", subtitle = "" }) => {
                 {isExpended ? subtitle : subtitle.slice(0, 150)}
                 {
                     subtitle.length >= 150 && (
-                        <button onClick={() => setIsExpended(!isExpended)} className="btn btn-xs mx-1 bg-purple-900 text-white">
+                        <button onClick={() => setIsExpended(!isExpended)} className="btn btn-xs mx-1 bg-transparent text-white">
                             {isExpended ? " Read less..." : " Read more..."}
                         </button>
                     )
