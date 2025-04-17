@@ -28,7 +28,7 @@ const Hero = () => {
                     {/* Image container */}
                     <div className="w-72 h-72 md:w-96 md:h-96 
       lg:w-[30rem] lg:h-[30rem]
-      bg-gradient-to-r from-purple-900 to-indigo-600 p-1 rounded-3xl
+      bg-gradient-to-r from-purple-900 to-indigo-600 p-0.5 rounded-3xl
       brightness-70 hover:brightness-90
       rotate-6 hover:rotate-0 transition-all duration-1000 relative  overflow-hidden">
                         <div className="spining-card absolute "></div>
