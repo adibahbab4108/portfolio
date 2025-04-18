@@ -33,28 +33,28 @@ const Education = () => {
             </div>
             <div className=" mt-10">
                 <Marquee pauseOnHover="true" className="flex gap-4">
-                    <div className="w-50 px-1  ">
+                    <div className="w-70 px-1  ">
                         <img src={certificates.webmasterCertificate} alt="" className="" />
                     </div>
-                    <div className="w-50 px-1 ">
+                    <div className="w-70 px-1 ">
                         <img src={certificates.ph1} alt="" />
                     </div>
-                    <div className="w-50 px-1 px-2 space-x-1 ">
+                    <div className="w-70 px-1">
                         <img src={certificates.ieee1} alt="" />
                     </div>
-                    <div className="w-50 px-1 ">
+                    <div className="w-70 px-1 ">
                         <img src={certificates.cloudToIot} alt="" />
                     </div>
-                    <div className="w-50 px-1 px-2 space-x-1  ">
+                    <div className="w-70 px-1">
                         <img src={certificates.fiveG} alt="" />
                     </div>
-                    <div className="w-50 px-1 px-2 space-x-1  ">
+                    <div className="w-70 px-1">
                         <img src={certificates.dataScienceML} alt="" />
                     </div>
-                    <div className="w-50 px-1 ">
+                    <div className="w-70 px-1">
                         <img src={certificates.icrcs} alt="" />
                     </div>
-                    <div className="w-50 px-1 ">
+                    <div className="w-70 px-1">
                         <img src={certificates.cyber1} alt="" />
                     </div>
                 </Marquee>

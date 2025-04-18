@@ -6,9 +6,7 @@ const AboutMe = () => {
             <SectionTitle
                 title="About Me"
                 subtitle="Dedicated and curious web developer with a strong focus on the MERN Stack (MongoDB, Express.js, React, Node.js). I love building full-stack applications that are not only functional but also deliver a great user experience.
-
 My journey into tech started with C++, where I developed a knack for problem-solving and algorithmic thinking—a skill that continues to guide me in writing efficient and clean code.
-
 Over time, I've worked with various tools and technologies in both frontend and backend development, including REST APIs, React Router, Firebase Auth, and MongoDB CRUD operations. I'm particularly passionate about writing readable, maintainable code and turning ideas into reality through modern web technologies" />
             <div className="text-white text-center space-x-4 space-y-4 group">
                 <div className="customized-btn p-2 skew-1 group-hover:skew-0">
@@ -27,8 +25,6 @@ Over time, I've worked with various tools and technologies in both frontend and 
                     Open to collaborations, open-source contributions, and networking
                 </div>
             </div>
-
-
         </div>
     );
 };
