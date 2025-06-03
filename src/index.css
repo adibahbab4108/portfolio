@@ -4,13 +4,20 @@
 html {
   scroll-behavior: smooth;
 }
+@theme {
+  --color-base1: #6366f1;
+  --color-base2: rgb(20, 184, 166);
+}
 
 .customized-btn {
-  @apply font-bold btn rounded-full bg-gradient-to-r from-violet-800 to-slate-900 text-white/80 text-lg p-6 hover:bg-gradient-to-l border-0 transition duration-300;
+  @apply font-bold btn rounded-full bg-gradient-to-r from-base2 to-base1 text-white/80 text-lg p-6 hover:animate-pulse border-0 transition-all duration-300;
+}
+.custom-icon-animation {
+  @apply hover:text-purple-600 hover:scale-130 transition-all duration-300  animate-bounce;
 }
 
 .spining-card {
-  background: linear-gradient(rgb(255, 255, 255), rgb(11, 253, 221));
+  background: linear-gradient(rgb(255, 255, 255), rgb(20, 184, 166));
   animation: spin 7s linear infinite;
   /* Adds spacing for border effect */
   width: calc(50% + 1px);
@@ -25,7 +32,7 @@ html {
   }
 }
 
-/* from uiverse */
+/* from uiverse ................*/
 .graph-line {
   width: 100%;
   height: 100%;
@@ -55,4 +62,45 @@ html {
       transparent
     );
   background-size: 100px 100px;
+}
+.custom-message-btn {
+  @apply relative bg-slate-900 h-16 w-36 border-2 border-teal-600 text-white font-bold rounded-xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:border-emerald-400 hover:text-emerald-300 p-3;
+}
+.custom-message-btn::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem; /* h-10 */
+  right: 0.5rem; /* right-2 */
+  top: 0.5rem; /* top-2 */
+  z-index: 10;
+  background-color: #6366f1; /* bg-indigo-500 */
+  border-radius: 9999px;
+  filter: blur(8px); /* blur-lg */
+  transition: all 0.5s;
+}
+
+.custom-message-btn::after {
+  content: "";
+  position: absolute;
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  left: 0; /* right-6 */
+  top: 1rem; /* top-4 */
+  z-index: 10;
+  background-color: rgb(20, 184, 166); /* bg-teal-400 */
+  border-radius: 9999px;
+  filter: blur(8px);
+  transition: all 0.5s;
+}
+
+.custom-message-btn:hover::before {
+  right: 2.5rem; /* right-10 */
+  bottom: -1rem; /* -bottom-4 */
+  filter: blur(12px);
+}
+
+.custom-message-btn:hover::after {
+  left: 6rem;
+  transform: scale(1.1);
 }

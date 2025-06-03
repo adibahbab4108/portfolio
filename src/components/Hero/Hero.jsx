@@ -7,8 +7,8 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center gap-12 mt-40 ">
         {/* Left Content */}
         <div className="text-center md:text-left max-w-2xl ">
-          <i className="text-3xl font-bold">Proficient in</i>
-          <h1 className="text-5xl md:text-6xl font-bold mt-2 bg-gradient-to-r from-purple-500 to-white bg-clip-text text-transparent">
+          <h4 className="text-xl font-bold text-base1">Proficient in</h4>
+          <h1 className="text-5xl md:text-6xl font-bold mt-2 bg-gradient-to-r from-base2 to-base1 bg-clip-text text-transparent">
             Next-Level Web Development.
           </h1>
 
@@ -18,7 +18,7 @@ const Hero = () => {
           </p> */}
           <div className="mt-10 flex flex-col md:flex-row items-center gap-4">
             <a
-              href="#"
+              href="/Adib%20Ahbab%20MERN%20Stack.pdf"
               download
               className="flex items-center gap-2 customized-btn"
             >
@@ -33,9 +33,9 @@ const Hero = () => {
           <div
             className="w-72 h-72 md:w-96 md:h-96 
       lg:w-[30rem] lg:h-[30rem]
-      bg-gradient-to-r from-purple-900 to-indigo-600 p-0.5 rounded-3xl
-      brightness-70 hover:brightness-90
-      rotate-6 hover:rotate-0 transition-all duration-1000 relative  overflow-hidden"
+      p-0.5 rounded-3xl
+      brightness-70 hover:brightness-100
+      rotate-6 hover:rotate-0 transition-all duration-1000 relative  overflow-hidden shadow-teal-400/50 shadow-2xl "
           >
             <div className="spining-card absolute "></div>
             <img

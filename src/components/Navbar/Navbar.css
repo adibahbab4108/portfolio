@@ -10,7 +10,7 @@
     width: 100%;
     height: 3px;
     border-radius: 2px;
-    background: linear-gradient(to right, #7F4BEA, #0F0715);
+    background: linear-gradient(to right, #14b8a6, #6366f1);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s;
