@@ -31,30 +31,34 @@ const Education = () => {
                     <p className="font-bold text-gray-300 mt-2">Bakalia High School</p>
                 </div>
             </div>
-            <div className=" mt-10">
+            <div className=" mt-8">
                 <Marquee pauseOnHover="true" className="flex gap-4">
-                    <div className="w-70 px-1  ">
+                    <div className="w-70 px-1 cursor-pointer  ">
                         <img src={certificates.webmasterCertificate} alt="" className="" />
                     </div>
-                    <div className="w-70 px-1 ">
-                        <img src={certificates.ph1} alt="" />
+                    <div className="w-70 px-1 cursor-pointer">
+                        <a href="http://localhost:5174/src/assets/certificates/programming-hero.jpg" target="_blank" rel="noopener noreferrer">
+                            <img src={certificates.ph1} alt="" />
+                        </a>
                     </div>
-                    <div className="w-70 px-1">
-                        <img src={certificates.ieee1} alt="" />
+                    <div className="w-70 px-1 cursor-pointer">
+                        <a href={certificates.ieee1} target="_blank" rel="noopener noreferrer">
+                            <img src={certificates.ieee1} alt="Certificate" />
+                        </a>
                     </div>
-                    <div className="w-70 px-1 ">
+                    <div className="w-70 px-1 cursor-pointer">
                         <img src={certificates.cloudToIot} alt="" />
                     </div>
-                    <div className="w-70 px-1">
+                    <div className="w-70 px-1 cursor-pointer">
                         <img src={certificates.fiveG} alt="" />
                     </div>
-                    <div className="w-70 px-1">
+                    <div className="w-70 px-1 cursor-pointer">
                         <img src={certificates.dataScienceML} alt="" />
                     </div>
-                    <div className="w-70 px-1">
+                    <div className="w-70 px-1 cursor-pointer">
                         <img src={certificates.icrcs} alt="" />
                     </div>
-                    <div className="w-70 px-1">
+                    <div className="w-70 px-1 cursor-pointer">
                         <img src={certificates.cyber1} alt="" />
                     </div>
                 </Marquee>

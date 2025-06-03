@@ -1,32 +1,24 @@
 import SectionTitle from "../shared/SectionTitle";
 
 const AboutMe = () => {
-    return (
-        <div id="about">
-            <SectionTitle
-                title="About Me"
-                subtitle="Dedicated and curious web developer with a strong focus on the MERN Stack (MongoDB, Express.js, React, Node.js). I love building full-stack applications that are not only functional but also deliver a great user experience.
-My journey into tech started with C++, where I developed a knack for problem-solving and algorithmic thinking—a skill that continues to guide me in writing efficient and clean code.
-Over time, I've worked with various tools and technologies in both frontend and backend development, including REST APIs, React Router, Firebase Auth, and MongoDB CRUD operations. I'm particularly passionate about writing readable, maintainable code and turning ideas into reality through modern web technologies" />
-            <div className="text-white text-center space-x-4 space-y-4 group">
-                <div className="customized-btn p-2 skew-1 group-hover:skew-0">
-                    Specializing in MERN Stack
-                </div>
-                <div className="customized-btn  skew-1 group-hover:skew-0">
-                    Passionate about building scalable web applications
-                </div>
-                <div className="customized-btn  -skew-1 group-hover:skew-0">
-                    Currently exploring Next.js
-                </div>
-                <div className="customized-btn -skew-1 group-hover:skew-0">
-                    Lifelong learner, always excited to explore new technologies
-                </div>
-                <div className="customized-btn skew-1 group-hover:skew-0">
-                    Open to collaborations, open-source contributions, and networking
-                </div>
-            </div>
+  return (
+    <div id="about">
+      <SectionTitle
+        title="About Me"
+      />
+      <div className="flex ">
+        <div className=" w-full  text-white/50">
+          A passionate Full-Stack Developer specialize in both front-end
+          technologies like React, Tailwind CSS, and JavaScript, and back-end
+          development with Node.js, Express.js, and MongoDB.<br/><br/>
+          Currently I&apos;m  Learning next level technologies i.e. TypeScript, PostgreSQL, advanced MongoDB and so on. <br/><br/>
+          I pursued my B.Sc in Computer Science and engineering from
+          International Islamic University Chittagong.
         </div>
-    );
+        <div className="h-60 w-full border">Hello</div>
+      </div>
+    </div>
+  );
 };
 
 export default AboutMe;
